@@ -1,5 +1,5 @@
-# Binance-Balancer - create your own ETF
-Portfolio re-balancer for binance. Herein I provide a script to automate digital asset portfolio re-balance at user specified intervals (defaults to every hour). Note this is long only spot portfolio.
+# Coinbase-Balancer - create your own ETF
+Portfolio re-balancer for coinbase. Herein I provide a script to automate digital asset portfolio re-balance at user specified intervals (defaults to every hour). Note this is long only spot portfolio.
 
 # Why diversify ?
 
@@ -32,25 +32,25 @@ From the above example, we can choose a simple portfolio:
 Steps to get started:
 
 1. [Download and install python framework](https://www.python.org/downloads/)
-2. [Set up a Binance account](https://www.binance.com/en/register?ref=LTUMGDDC)
-3. [Generate API keys](https://www.binance.com/userCenter/createApi.html)
-4. Fund your Binance account
-5. Download this binance balancer script
-6. Edit API keys in binance_balancer.py
+2. [Set up a Coinbase account](https://www.coinbase.com/join/bradle_6r)
+3. [Generate API keys](https://pro.coinbase.com/profile/api)
+4. Fund your Coinbase Pro account
+5. Download this coinbase balancer script
+6. Edit API keys in coinbase_balancer.py
 7. Edit your configuration:
 
 ```python
-lastweights = {     "BAT":0.1,         "XLM":0.1,     "BNB":0.1,      "BTC": 0.4,       "USDT": 0.3 }
+lastweights = {     "LTC":0.1,         "XLM":0.1,     "ETC":0.1,      "BTC": 0.4,       "GBP": 0.3 }
 ```
 Install dependencies:
 
 ```
-pip install python-binance
+pip install cbpro
 ```
 Run the script (it will automatically re-balance for you every hour):
 
 ```
-python binance-balancer.py
+python coinbase-balancer.py
 ```
 
 # Final thoughts 
